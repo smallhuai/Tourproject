@@ -13,4 +13,9 @@ export default (Vue)=>{
 	// 绑定到Vue原型里面直接可以在当前实例 this.$global上面调用
 	Vue.prototype.$global=global;
 	Vue.prototype.$apis=apis;
+
+// 全局通信	
+// 使用 $on 注册事件
+// 使用 $emit 出发
+	Vue.prototype.$eventHub=new Vue();
 }

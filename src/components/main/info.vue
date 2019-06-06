@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
       <h1>我是信息页</h1>
-      <div class="box"></div>
+      <button @click="jia">add</button>
+      <button @click="test">test</button>
   </div>
 </template>
 
@@ -15,7 +16,7 @@ export default {
     }
   },
   mounted(){
-   console.log(this.$route)
+    // console.log(this.$store.state.name)
     //  var data={
     //           v: '1559785164172',
     //           c: 'Index',
@@ -28,11 +29,15 @@ export default {
     // })
   },
   methods:{
-  	add(){
-  		this.$router.push({
-  			path:"/msea/89",
-  		})
-  	}
+    jia(){
+      // console.log()
+      // 调用mutations里面同步方法的方法,使用commit
+      this.$store.commit("add");
+    },
+    test(){
+      // 调用actions里面异步方法的方法,使用dispatch
+       this.$store.dispatch("add");
+    }
   }
 }
 </script>

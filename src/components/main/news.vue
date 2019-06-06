@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
       <h1>我是新闻页</h1>
+      <button @click="test">调用</button>
       <router-link to="/news/childCom">子路由</router-link>
       <router-view/>
   </div>
@@ -15,9 +16,12 @@ export default {
     }
   },
   mounted(){
-    // 获取路由传递参数
-    console.log(this.$route.params)
-    console.log(this.$route.query)
+   
+  },
+  methods:{
+    test(){
+      this.$eventHub.$emit("sub",{name:"Msea"})
+    }
   }
 }
 </script>

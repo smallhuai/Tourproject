@@ -17,7 +17,9 @@ export default {
     }
   },
   mounted(){
-   
+    this.$eventHub.$on("sub",(val)=>{
+      console.log(val)
+    })
   },
   components:{
     lay_head

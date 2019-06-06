@@ -5,6 +5,10 @@
           <router-link :to="item.path">{{item.name}}</router-link>
         </li>
     </ul>
+    <div>
+      总价:{{$store.getters.count}}
+      数量:{{$store.state.num}}
+    </div>
   </div>
 </template>
 

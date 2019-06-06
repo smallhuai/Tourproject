@@ -5,6 +5,7 @@ import router from './router'
 
 import "@/common/css/index.scss"
 import 'lib-flexible/flexible.js'
+
 // 引入core.config.js
 import core from "@/core/core.config"
 Vue.use(core);

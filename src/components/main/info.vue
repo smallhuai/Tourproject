@@ -2,7 +2,6 @@
   <div class="hello">
       <h1>我是信息页</h1>
       <div class="box"></div>
-     
   </div>
 </template>
 
@@ -16,15 +15,17 @@ export default {
     }
   },
   mounted(){
-    // console.log();
-     var data={
-                type: 'pic',
-                page:'1',
-                pagesize:'10'
-            };
-    this.$apis.joke(data).then((res)=>{
-        console.log(res);
-    })
+   console.log(this.$route)
+    //  var data={
+    //           v: '1559785164172',
+    //           c: 'Index',
+    //           m: 'GetBannerList',
+    //           Type: '2',
+    //           City: '上海'
+    //         };
+    // this.$apis.GetBannerList(data).then((res)=>{
+    //     console.log(res);
+    // })
   },
   methods:{
   	add(){

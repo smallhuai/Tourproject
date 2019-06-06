@@ -15,11 +15,18 @@ const router = new Router({
     children: [{
         path: 'info',
         name: 'info',
+        meta:{
+          keepAlive:false,
+          Msea:111
+        },
         component: resolve => require(['@/components/main/info'], resolve)
       },
       {
         path: 'news',
         name: 'news',
+        meta:{
+          keepAlive:false,
+        },
         component: resolve => require(['@/components/main/news'], resolve),
         children: [{
           path: 'childCom',

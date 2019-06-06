@@ -7,8 +7,11 @@ const path = require('path')
 
 
 
-const URL ="https://bird.ioliu.cn";
+// const URL ="https://bird.ioliu.cn";
+// http://m.bestcake.com 
 // const URL ="http://10.41.153.189:8899";
+const URL ="http://m.bestcake.com";
+
 
 module.exports = {
   dev: {

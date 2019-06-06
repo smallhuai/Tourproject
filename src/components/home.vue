@@ -1,7 +1,10 @@
 <template>
   <div>
     <lay_head></lay_head>
-    <router-view/>
+    <keep-alive>
+        <router-view v-if="$route.meta.keepAlive"/>
+    </keep-alive>
+        <router-view v-if="!$route.meta.keepAlive"/>
   </div>
 </template>
 
@@ -12,6 +15,9 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted(){
+   
   },
   components:{
     lay_head

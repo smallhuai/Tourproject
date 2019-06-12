@@ -1,5 +1,7 @@
 import request from "./http"
+import params from "./params"
 
+console.log(params);
 var url1="/json1811.ashx";
 class Apls{
 	joke(data){

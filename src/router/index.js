@@ -17,7 +17,7 @@ const router = new Router({
         name: 'info',
         meta:{
           keepAlive:false,
-          Msea:111
+          title:"我是信息页"
         },
         component: resolve => require(['@/components/main/info'], resolve)
       },
@@ -26,6 +26,7 @@ const router = new Router({
         name: 'news',
         meta:{
           keepAlive:false,
+          title:"我是新闻页"
         },
         component: resolve => require(['@/components/main/news'], resolve),
         children: [{
@@ -38,6 +39,9 @@ const router = new Router({
         path: 'test',
         name: 'test',
         component: resolve => require(['@/components/main/test'], resolve),
+        meta:{
+          title:"我是测试页"
+        }
       },
       {
         path: 'msea/:id',

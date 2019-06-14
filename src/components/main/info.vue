@@ -7,7 +7,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'HelloWorld',
   data () {
@@ -16,6 +15,11 @@ export default {
     }
   },
   mounted(){
+    // this.$apis.mockTest()
+    this.$apis.mockTest().then((res)=>{
+      console.log(res);
+    })
+
     // console.log(this.$store.state.name)
     //  var data={
     //           v: '1559785164172',

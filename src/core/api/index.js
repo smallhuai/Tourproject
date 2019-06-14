@@ -1,5 +1,10 @@
 import request from "./http"
 import params from "./params"
+import mock from "@/mock/mock"
+// console.log(mock);
+
+// axios.get('/user?ID=12345')
+
 
 console.log(params);
 var url1="/json1811.ashx";
@@ -18,6 +23,13 @@ class Apls{
 			url:url1,
 			params:data
 		})
+	}
+	mockTest(){
+		return mock.get("/login", {
+			params: {
+			  name: 12345
+			}
+		  })
 	}
 }
 

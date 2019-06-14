@@ -21,7 +21,25 @@ mock.onGet('/login').reply(config => {
 			data.code=500
 	}
 	return [200,UsersData[0]];
-   
+});
+
+mock.onPost('/test').reply(config => {
+	console.log(config)
+	console.log(UsersData[0])
+	// 做一个数据效验
+	var data={
+				code: 200,
+				msg: ''
+			};
+	
+	if(false) {
+			data.msg="登陆成功";
+			data.code=200;
+	}else{
+			data.msg="账号或者密码错误";
+			data.code=500
+	}
+	return [200,UsersData[0]];
 });
 
 // 例子

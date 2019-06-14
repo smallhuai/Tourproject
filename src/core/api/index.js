@@ -24,10 +24,17 @@ class Apls{
 			params:data
 		})
 	}
-	mockTest(){
+	mockLogin(){
 		return mock.get("/login", {
 			params: {
 			  name: 12345
+			}
+		  })
+	}
+	mockTest(){
+		return mock.post("/test", {
+			params: {
+				name: 12345
 			}
 		  })
 	}

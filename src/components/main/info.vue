@@ -16,7 +16,11 @@ export default {
   },
   mounted(){
     // this.$apis.mockTest()
-    this.$apis.mockTest().then((res)=>{
+    this.$apis.mockLogin().then((res)=>{
+      console.log(res);
+    })
+
+     this.$apis.mockTest().then((res)=>{
       console.log(res);
     })
 

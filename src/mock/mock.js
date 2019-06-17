@@ -45,12 +45,15 @@ mock.onPost('/test').reply(config => {
 
 // 例子
 /*
-axios.get('/user?ID=12345')
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
+ login(data){
+    return mock.post("/login",{
+      data: data
+    })
+  }
+   login(data){
+    return mock.get("/login",{
+      params: data
+    })
+  }
 */
 export default axios;	//注意暴露axios

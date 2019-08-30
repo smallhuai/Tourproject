@@ -1,25 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import api from '@/core/api/index'
-// console.log(global.getParam())
-
-
 Vue.use(Router)
 
 const router = new Router({
   routes: [{
     path: '/',
-    name: '/',
-    component: resolve => require(['@/components/home'], resolve),
-    redirect: "info",
+    name: 'app',
+    component: resolve => require(['@/App'], resolve),
+    redirect: "home",
     children: [{
-        path: 'info',
-        name: 'info',
+        path: 'home',
+        name: 'home',
         meta:{
           keepAlive:false,
           title:"我是信息页"
         },
-        component: resolve => require(['@/components/main/info'], resolve)
+        component: resolve => require(['@/components/home'], resolve)
       },
       {
         path: 'news',

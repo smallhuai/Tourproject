@@ -1,10 +1,6 @@
 <template>
   <div>
     <lay_head></lay_head>
-    <keep-alive>
-        <router-view v-if="$route.meta.keepAlive" v-wechat-title="$route.meta.title" img-set="/static/logo.png"/>
-    </keep-alive>
-        <router-view v-if="!$route.meta.keepAlive" v-wechat-title="$route.meta.title" img-set="/static/logo.png"/>
   </div>
 </template>
 

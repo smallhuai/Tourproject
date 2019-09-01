@@ -1,12 +1,11 @@
 <template>
   <div class="LayHead">
-     xxx
+    xxx
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
   data () {
     return {
     }

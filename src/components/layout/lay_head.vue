@@ -41,6 +41,7 @@ export default {
     margin-top: r(15);
     margin-left: r(15);
     margin-right: r(15);
+    color: #999;
     box-shadow:0 0 r(2) #666 inset;
     border-radius: r(25);
   }

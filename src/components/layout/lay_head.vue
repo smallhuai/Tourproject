@@ -1,8 +1,5 @@
 <template>
   <div class="LayHead">
-<<<<<<< HEAD
-    xxx
-=======
     <div class="header-back">
       <span class="iconfont icon-jiantou2"></span>
     </div>
@@ -14,21 +11,14 @@
       长沙
       <span class="iconfont icon-jiantou"></span>
     </div>
->>>>>>> header-nav
   </div>
 </template>
 
 <script>
 import "@/assets/icon/iconfont.css";
 export default {
-<<<<<<< HEAD
-  data () {
-    return {
-    }
-=======
   data() {
     return {};
->>>>>>> header-nav
   }
 };
 </script>
